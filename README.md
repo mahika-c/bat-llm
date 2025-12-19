@@ -44,7 +44,7 @@ This repo contains an end‑to‑end pipeline for **audio‑language modeling on
 - **Sequence modeling / language modeling**
   - `08_Next_Token_Language_Model.ipynb`: trains a small Transformer **next‑token language model** over the discrete acoustic tokens (wav2vec2+k‑means or VQ‑VAE codes), reporting validation cross‑entropy, perplexity, and token‑level accuracy, and providing a simple sampling routine for qualitative evaluation. 
   - `09_Decoder_Next_Token_LM.ipynb`: extends the next-token LM with **decoding and qualitative evaluation**, including experiments with k-means (baseline and RLE) and VQ-VAE tokens. This notebook implements audio reconstruction for VQ-VAE-based models and qualitative diagnostics (e.g., RMS energy plots and repetition-controlled sampling) to assess generated outputs.
-  ## Generated audio samples (qualitative)
+## Generated audio samples (qualitative)
 
 We include two example audio samples generated from the trained next-token language model using **VQ-VAE tokens**, decoded back into waveform audio. These samples are intended for **qualitative inspection only**, illustrating that the model produces non-degenerate audio with plausible temporal structure.
 
